@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "rootDir": "./",
+    "moduleResolution": "node",
+  },
+  "include": [
+    "./app.ts",                  // Include root TypeScript file
+    "./config/**/*.ts",          // Include TypeScript files in config folder
+    "./middleware/**/*.ts",      // Include TypeScript files in middleware folder
+    "./models/**/*.ts",          // Include TypeScript files in models folder
+    "./routes/**/*.ts",          // Include TypeScript files in routes folder
+    "types/**/*.d.ts"            // Include custom type definitions
+  ],
+  "exclude": [
+    "node_modules"               // Exclude node_modules from compilation
+  ]
+}
